@@ -12,5 +12,5 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 @EnableElasticsearchRepositories
 public interface EsProductRepository extends ElasticsearchRepository<EsProduct, Long> {
 
-    Page<EsProduct> findByNameOrSubTitleOrKeywords(String str, Pageable page);
+    Page<EsProduct> findByNameOrSubTitleOrKeywords(String str1, String str2, String str3, Pageable page);
 }

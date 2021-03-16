@@ -25,6 +25,11 @@ spring:
         network.host: nightbubble.top
         transport.tcp.port: 9300
 
+      mongodb:
+        host: nightbubble.top
+        port: 27017
+        database: mall_port
+
 
 mybatis:
   mapper-locations:

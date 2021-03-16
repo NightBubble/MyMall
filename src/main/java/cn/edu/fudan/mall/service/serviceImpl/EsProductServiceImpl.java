@@ -74,6 +74,6 @@ public class EsProductServiceImpl implements EsProductService {
     @Override
     public Page<EsProduct> search(String keyword, Integer pageNum, Integer pageSize) {
         Pageable page = PageRequest.of(pageNum,pageSize);
-        return esProductRepository.findByNameOrSubTitleOrKeywords(keyword, page);
+        return esProductRepository.findByNameOrSubTitleOrKeywords(keyword, keyword, keyword, page);
     }
 }

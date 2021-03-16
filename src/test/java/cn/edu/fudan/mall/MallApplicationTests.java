@@ -12,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
@@ -39,8 +40,11 @@ class MallApplicationTests {
 
     @Test
     void delete(){
-        int id = 2;
-        esProductService.deleteById(Long.valueOf(id));
+        ArrayList<Long> ls = new ArrayList<>();
+        for(long i=0;i<=1000;i++){
+            ls.add(i);
+        }
+        esProductService.delete(ls);
     }
 
 

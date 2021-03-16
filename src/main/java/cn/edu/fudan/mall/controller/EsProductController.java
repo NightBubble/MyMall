@@ -63,7 +63,7 @@ public class EsProductController {
     @RequestMapping(value="/sampleSearch", method=RequestMethod.POST)
     @ResponseBody
     CommonResult<CommonPage<EsProduct>> simpleSearch(@RequestParam("words") String words,
-                                                     @RequestParam(value = "pageSize", required = false, defaultValue="1")int pageSize,
+                                                     @RequestParam(value = "pageSize", required = false, defaultValue="1000")int pageSize,
                                                      @RequestParam(value = "pageNum", required = false, defaultValue="1")int pageNum){
         Page<EsProduct> page = esProductService.search(words, pageNum, pageSize);
         return CommonResult.success(CommonPage.restPage(page.toList()),"查询成功");

@@ -173,6 +173,12 @@
             <artifactId>elasticsearch-rest-client</artifactId>
             <version>7.5.1</version>
         </dependency>
+
+        <!---mongodb相关依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
