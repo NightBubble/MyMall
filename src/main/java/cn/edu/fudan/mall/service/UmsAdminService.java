@@ -37,4 +37,6 @@ public interface UmsAdminService {
      * @return
      */
     List<UmsPermission> getPermissionList(Long adminId);
+
+
 }

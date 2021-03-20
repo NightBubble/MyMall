@@ -8,7 +8,7 @@ import org.springframework.data.elasticsearch.client.RestClients;
 
 import javax.annotation.PostConstruct;
 
-@Configuration
+//@Configuration
 public class ElasticSearchConfig {
     /**
      * 防止netty的bug

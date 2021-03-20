@@ -61,4 +61,5 @@ public class UmsAdminController {
         return CommonResult.success(permissionList);
     }
 
+
 }

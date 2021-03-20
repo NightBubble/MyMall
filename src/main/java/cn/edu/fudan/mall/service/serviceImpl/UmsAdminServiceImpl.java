@@ -92,4 +92,6 @@ public class UmsAdminServiceImpl implements UmsAdminService {
     public List<UmsPermission> getPermissionList(Long adminId) {
         return new ArrayList<>();
     }
+
+
 }
